@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from 'next-themes';
 
 const inter = Inter({ subsets: ["latin"] });
 const mono = DM_Mono({
@@ -23,9 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark:bg-black bg-white">
       <body className={mono.className}>
-        <ThemeProvider attribute="class">
           {children}
-        </ThemeProvider>
       </body>
     </html>
   );
