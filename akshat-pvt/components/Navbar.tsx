@@ -1,6 +1,10 @@
+"use client";
+
 import Image from 'next/image'
 import React from 'react'
 import logo from '@/assets/logo-dark.svg'
+import { Button } from './ui/button'
+import { ModeToggle } from './ThemeToggle';
 
 const Navbar = () => {
   return (
@@ -13,6 +17,7 @@ const Navbar = () => {
                   <p className='border border-dashed border-transparent hover:border-rose-500 rounded-sm px-4 py-2 dark:hover:text-rose-500 cursor-pointer transition-colors'>Work with me</p>
                   <p className='border border-dashed border-transparent hover:border-rose-500 rounded-sm px-4 py-2 dark:hover:text-rose-500 cursor-pointer transition-colors'>Connect</p>
                 </div>
+                <ModeToggle />
             </div>
         </div>
     </div>

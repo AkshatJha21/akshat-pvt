@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { DM_Mono, Inter } from "next/font/google";
+import { DM_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
 const mono = DM_Mono({
   weight: ['300', '400', '500'],
   subsets: ["latin", "latin-ext"],
@@ -20,10 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark:bg-black bg-white">
-      <body className={mono.className}>
+    <>
+      <html lang="en" suppressHydrationWarning>
+        <body className={mono.className}>
+          <Navbar />
           {children}
-      </body>
-    </html>
+        </body>
+      </html>
+    </>
   );
 }
