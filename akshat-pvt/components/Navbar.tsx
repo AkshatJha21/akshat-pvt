@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { ModeToggle } from './ThemeToggle';
+import { Button } from './ui/button';
 
 const Navbar = () => {
   return (
@@ -10,9 +11,15 @@ const Navbar = () => {
             <div className='flex items-center justify-between px-2'>
                 <h1 className='font-bold text-lg'>2One</h1>
                 <div className='hidden md:flex text-sm justify-between dark:text-white w-3/5'>
-                  <p className='border border-dashed border-transparent hover:border-rose-500 rounded-sm px-4 py-2 dark:hover:text-rose-500 cursor-pointer transition-all'>Portfolio</p>
-                  <p className='border border-dashed border-transparent hover:border-rose-500 rounded-sm px-4 py-2 dark:hover:text-rose-500 cursor-pointer transition-colors'>Work with me</p>
-                  <p className='border border-dashed border-transparent hover:border-rose-500 rounded-sm px-4 py-2 dark:hover:text-rose-500 cursor-pointer transition-colors'>Connect</p>
+                  <Button variant={'dotted'}>
+                    Portfolio
+                  </Button>
+                  <Button variant={'dotted'}>
+                    Services
+                  </Button>
+                  <Button variant={'dotted'}>
+                    Connect
+                  </Button>
                 </div>
                 <div className='flex md:hidden items-center'>
                   Menu
