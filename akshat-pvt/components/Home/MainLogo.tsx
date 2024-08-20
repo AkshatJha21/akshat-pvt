@@ -6,24 +6,22 @@ import { motion } from 'framer-motion';
 const MainLogo = () => {
   const text = '2One';
   const [showText, setShowText] = useState(false);
-  const [showUnderscore, setShowUnderscore] = useState(true);
+  const [showUnderscore, setShowUnderscore] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const initialUnderscoreTimer = setTimeout(() => {
+    const loadingTimer = setTimeout(() => {
+      setLoading(false);
       setShowUnderscore(false);
-    }, 1500); // Time before underscore disappears
-
-    const textTimer = setTimeout(() => {
       setShowText(true);
-    }, 2000); // Time before text starts appearing
+    }, 2000); // Total duration of the loading animation (dots appear twice)
 
     const finalUnderscoreTimer = setTimeout(() => {
       setShowUnderscore(true);
-    }, 3500); // Time before underscore reappears
+    }, 3000); // Time before the underscore starts flickering
 
     return () => {
-      clearTimeout(initialUnderscoreTimer);
-      clearTimeout(textTimer);
+      clearTimeout(loadingTimer);
       clearTimeout(finalUnderscoreTimer);
     };
   }, []);
@@ -52,6 +50,25 @@ const MainLogo = () => {
 
   return (
     <div className="text-6xl cursor-default font-semibold dark:text-rose-600">
+      {loading && (
+        <div className="inline-flex space-x-2">
+          {[0, 1, 2].map((i) => (
+            <motion.span
+              key={i}
+              className="inline-block text-7xl"
+              animate={{ opacity: [0, 1, 0] }}
+              transition={{
+                repeat: 1, 
+                duration: 0.6, 
+                delay: i * 0.2, 
+              }}
+            >
+              .
+            </motion.span>
+          ))}
+        </div>
+      )}
+
       {showText && (
         <motion.div
           className="inline-flex"
