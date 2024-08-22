@@ -49,7 +49,7 @@ const MainLogo = () => {
   };
 
   return (
-    <div className="text-6xl cursor-default font-semibold dark:text-rose-600">
+    <div className="text-[42px] md:text-6xl cursor-default font-semibold dark:text-rose-600">
       {loading && (
         <div className="inline-flex space-x-2">
           {[0, 1, 2].map((i) => (
