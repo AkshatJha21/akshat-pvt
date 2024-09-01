@@ -11,17 +11,8 @@ const Landing = () => {
 
   return (
     <div className='h-screen flex flex-col items-center justify-center'>
-        <MainLogo />  
-          {/* Subheading div below */}
-        
-          <div
-            className='py-4 md:py-8 flex md:flex-row gap-y-4 flex-col md:w-[50%] items-center justify-center'
-          >
-            <p className='md:text-[16px] text-pretty md:text-balance md:w-3/5 w-4/5'>
-              {str}
-            </p>
-            <DottedButton />
-          </div>
+        <MainLogo />
+          
     </div>
   )
 }
