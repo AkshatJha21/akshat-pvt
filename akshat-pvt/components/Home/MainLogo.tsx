@@ -69,7 +69,7 @@ const MainLogo = () => {
             </motion.span>
           </div>
           <div
-            className='py-8 flex md:flex-row gap-y-8 flex-col md:w-[60%] items-center justify-evenly'
+            className='my-12 flex md:flex-row gap-y-8 flex-col md:w-[60%] items-center justify-evenly'
           >
             <p className='md:text-lg text-pretty md:text-balance md:w-3/5 w-4/5'>
               {str}
