@@ -1,55 +1,50 @@
-"use client";
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useRef } from "react";
 
-import { useScroll, useTransform } from 'framer-motion';
-import React, { useRef } from 'react';
-import { motion } from 'framer-motion';
-
-const Portfolio = () => {
+export const Example = () => {
   return (
-    // <div className='h-screen flex justify-center items-center'>
-    //     <h1 className='text-3xl font-semibold text-rose-600'>Our Portfolio</h1>
-    //     <HorizontalScrollCarousel />
-    // </div>
-    <div>
-      <div className='flex h-96 items-center justify-center'>
-        <h1 className='text-3xl font-semibold text-rose-600'>Our Portfolio</h1>
+    <div className="">
+      <div className="flex h-48 items-center justify-center">
+        <span className="font-semibold uppercase text-neutral-500">
+          Scroll down
+        </span>
       </div>
       <HorizontalScrollCarousel />
-      {/* <div className='flex h-48 items-center justify-center'>
-        <h1 className='text-3xl font-semibold text-rose-600'>Our Portfolio</h1>
-      </div> */}
+      <div className="flex h-48 items-center justify-center">
+        <span className="font-semibold uppercase text-neutral-500">
+          Scroll up
+        </span>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
-
-const HorizontalScrollCarousel = () => {
-
+export const HorizontalScrollCarousel = () => {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
+
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <div ref={targetRef} className='relative h-[300vh]'>
-      <div className='sticky top-0 flex h-screen items-center overflow-hidden'>
+    <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
           })}
         </motion.div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
 const Card = ({ card }: { card: CardType }) => {
   return (
-    <div 
+    <div
       key={card.id}
-      className="group relative h-[450px] w-[450px] overflow-hidden"
+      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
     >
       <div
         style={{
@@ -65,14 +60,14 @@ const Card = ({ card }: { card: CardType }) => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 type CardType = {
   url: string;
   title: string;
   id: number;
-}
+};
 
 const cards: CardType[] = [
   {
