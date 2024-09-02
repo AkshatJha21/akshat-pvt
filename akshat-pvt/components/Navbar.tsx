@@ -31,8 +31,8 @@ const Navbar = () => {
       }
     }, [dropdownRef]);
   return (
-    <div className='w-screen fixed'>
-        <div className='relative mx-auto w-[80%] mt-4 lg:w-[60%] p-3 dark:bg-zinc-800/40 border-[0.5px] dark:border-zinc-700/40 rounded-xl shadow-md'>
+    <div className='w-screen fixed z-50'>
+        <div className='relative mx-auto w-[80%] mt-4 lg:w-[60%] p-3 dark:bg-zinc-900/60 border-[0.5px] dark:border-zinc-700/40 rounded-xl shadow-md backdrop-blur-md'>
             <div className='flex items-center justify-between px-2'>
                 <h1 className='font-bold text-lg text-rose-600'>2One</h1>
                 <div className='hidden md:flex text-sm justify-between dark:text-white w-3/5'>
