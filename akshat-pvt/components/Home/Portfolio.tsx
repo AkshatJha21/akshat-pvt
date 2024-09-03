@@ -3,6 +3,7 @@
 import { useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
+import img1 from '@/public/images/landing.png'
 
 const Portfolio = () => {
   return (
@@ -76,38 +77,38 @@ type CardType = {
 
 const cards: CardType[] = [
   {
-    url: "/imgs/abstract/1.jpg",
-    title: "Title 1",
+    url: '/images/landing.png',
+    title: "Landing Pages",
     id: 1,
   },
   {
-    url: "/imgs/abstract/2.jpg",
-    title: "Title 2",
+    url: "/images/tools.png",
+    title: "SaaS",
     id: 2,
   },
   {
-    url: "/imgs/abstract/3.jpg",
-    title: "Title 3",
+    url: "/images/blogging.png",
+    title: "Blogs",
     id: 3,
   },
   {
-    url: "/imgs/abstract/4.jpg",
-    title: "Title 4",
+    url: "/images/ecommerce.png",
+    title: "Online Stores",
     id: 4,
   },
   {
-    url: "/imgs/abstract/5.jpg",
-    title: "Title 5",
+    url: "/images/inventory.png",
+    title: "Inventory Manager",
     id: 5,
   },
   {
-    url: "/imgs/abstract/6.jpg",
-    title: "Title 6",
+    url: "/images/social.png",
+    title: "Community Builders",
     id: 6,
   },
   {
-    url: "/imgs/abstract/7.jpg",
-    title: "Title 7",
+    url: "/images/rental.png",
+    title: "Finance",
     id: 7,
   },
 ];
