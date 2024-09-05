@@ -3,7 +3,7 @@
 import { useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import img1 from '@/public/images/landing.png'
+import { ScreenFitText } from '../FitText';
 
 const Portfolio = () => {
   return (
@@ -12,9 +12,9 @@ const Portfolio = () => {
         <h1 className='text-3xl font-semibold dark:text-rose-600'>Our Portfolio</h1>
       </div>
       <HorizontalScrollCarousel />
-      {/* <div className='flex h-48 items-center justify-center'>
-        <h1 className='text-3xl font-semibold text-rose-600'>Our Portfolio</h1>
-      </div> */}
+      <div>
+        <ScreenFitText />
+      </div>
     </div>
   )
 }
