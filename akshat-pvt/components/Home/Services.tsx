@@ -66,15 +66,15 @@ const Services = () => {
                         icon: true
                     },
                     {
+                        offer: 'Any time revision',
+                        icon: true
+                    },
+                    {
                         offer: '24x7 support',
                         icon: true
                     },
                     {
                         offer: 'Regular bug fixes',
-                        icon: true
-                    },
-                    {
-                        offer: '',
                         icon: true
                     },
                 ]}
