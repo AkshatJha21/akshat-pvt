@@ -17,7 +17,7 @@ interface CardProps {
 
 const PlanCard = ({ title, tag, desc, offers, price, model }: CardProps) => {
   return (
-    <div className='h-[450px] w-[25%] border-2 rounded-xl border-dashed border-rose-500 bg-slate-100 dark:bg-zinc-950 px-8 py-4 text-black dark:text-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#f43f5d] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none'>
+    <div className='w-[90%] mx-auto lg:w-[27.5%] border-2 rounded-xl border-dashed border-rose-500 bg-slate-100 dark:bg-zinc-950 px-8 py-4 text-black dark:text-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#f43f5d] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none'>
         <div className='flex flex-col'>
             <div className='py-4'>
                 <div className='flex justify-between items-center'>
@@ -42,8 +42,8 @@ const PlanCard = ({ title, tag, desc, offers, price, model }: CardProps) => {
                     </div>
                 )}
             </div>
-            <div className='flex items-baseline py-4'>
-                <h1 className='text-3xl font-semibold'>₹ {price}</h1>
+            <div className='flex flex-col items-baseline py-4'>
+                <h1 className='text-3xl font-semibold'>₹{price}</h1>
                 <p className='ml-2'>{model}</p>
             </div>
         </div>

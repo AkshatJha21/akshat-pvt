@@ -3,9 +3,9 @@ import PlanCard from '../PlanCard'
 
 const Services = () => {
   return (
-    <div className='h-screen flex flex-col justify-center items-center'>
+    <div className='lg:h-screen flex flex-col justify-center items-center'>
         <h1 className='text-3xl font-semibold dark:text-rose-600 py-8'>Our Services</h1>
-        <div className='flex justify-evenly w-full my-8'>
+        <div className='flex lg:flex-row flex-col justify-evenly w-full my-8 gap-y-12'>
             <PlanCard
                 title='Basic'
                 tag='Individual'
@@ -13,7 +13,7 @@ const Services = () => {
                 offers={[
                     {
                         id: 1,
-                        offer: 'Responsive Design',
+                        offer: 'Responsive design',
                         icon: true
                     },
                     {
@@ -28,7 +28,7 @@ const Services = () => {
                     },
                     {
                         id: 4,
-                        offer: 'Search Engine Optimized',
+                        offer: 'SEO',
                         icon: false
                     },
                 ]}
@@ -47,7 +47,7 @@ const Services = () => {
                     },
                     {
                         id: 2,
-                        offer: 'Search Engine Optimized',
+                        offer: 'SEO',
                         icon: true
                     },
                     {
@@ -57,7 +57,7 @@ const Services = () => {
                     },
                     {
                         id: 4,
-                        offer: 'Management after deploying',
+                        offer: 'Deployed & managed',
                         icon: false
                     },
                 ]}
@@ -67,11 +67,11 @@ const Services = () => {
             <PlanCard
                 title='Premium'
                 tag='Company'
-                desc='Develop, Deploy & Manage'
+                desc='Design, Develop, Deploy & Manage'
                 offers={[
                     {
                         id: 1,
-                        offer: 'Management after deploying',
+                        offer: 'Deployed & managed',
                         icon: true
                     },
                     {
