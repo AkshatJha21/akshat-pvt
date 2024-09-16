@@ -12,18 +12,22 @@ const Services = () => {
                 desc='Landing pages & Portfolios'
                 offers={[
                     {
+                        id: 1,
                         offer: 'Responsive Design',
                         icon: true
                     },
                     {
+                        id: 2,
                         offer: 'Delivery in 48 hrs',
                         icon: true
                     },
                     {
+                        id: 3,
                         offer: 'Multiple revisions',
                         icon: false
                     },
                     {
+                        id: 4,
                         offer: 'Search Engine Optimized',
                         icon: false
                     },
@@ -37,18 +41,22 @@ const Services = () => {
                 desc='Blogs, Ecommerce, Social & Tools'
                 offers={[
                     {
+                        id: 1,
                         offer: 'Multiple revisions',
                         icon: true
                     },
                     {
+                        id: 2,
                         offer: 'Search Engine Optimized',
                         icon: true
                     },
                     {
+                        id: 3,
                         offer: 'Regular check-ins',
                         icon: true
                     },
                     {
+                        id: 4,
                         offer: 'Management after deploying',
                         icon: false
                     },
@@ -62,18 +70,22 @@ const Services = () => {
                 desc='Develop, Deploy & Manage'
                 offers={[
                     {
+                        id: 1,
                         offer: 'Management after deploying',
                         icon: true
                     },
                     {
+                        id: 2,
                         offer: 'Any time revision',
                         icon: true
                     },
                     {
+                        id: 3,
                         offer: '24x7 support',
                         icon: true
                     },
                     {
+                        id: 4,
                         offer: 'Regular bug fixes',
                         icon: true
                     },
