@@ -43,6 +43,9 @@ const Navbar = () => {
                     Services
                   </Button>
                   <Button variant={'dotted'}>
+                    Blog
+                  </Button>
+                  <Button variant={'dotted'}>
                     Connect
                   </Button>
                 </div>
@@ -81,6 +84,9 @@ const DropdownMenu = () => {
                 </div>
                 <div className='px-2 py-2'>
                     Services
+                </div>
+                <div className='px-2 py-2'>
+                    Blog
                 </div>
                 <div className='px-2 py-2'>
                     Connect
