@@ -32,8 +32,8 @@ const Services = () => {
                         icon: false
                     },
                 ]}
-                price={3999}
-                model='per web page'
+                price={1799}
+                model='one time'
             />
             <PlanCard
                 title='Value'
@@ -42,7 +42,7 @@ const Services = () => {
                 offers={[
                     {
                         id: 1,
-                        offer: 'Multiple revisions',
+                        offer: '7 revisions',
                         icon: true
                     },
                     {
@@ -61,8 +61,8 @@ const Services = () => {
                         icon: false
                     },
                 ]}
-                price={9999}
-                model='per month'
+                price={6999}
+                model='one time'
             />
             <PlanCard
                 title='Premium'
